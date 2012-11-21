@@ -4,4 +4,6 @@ The application gets the stock information from Yahoo finance and displays the<b
 data in a table in a separate window so the user can easily compare stock from different companies.<br/>
 <br/>
 StockApp Pro main screen:<br/>
-![Error loading image]()
+![Error loading image](https://raw.github.com/Jayen/StockAppPro/master/screenshots/Screen2.jpg)
+Data windows:<br/>
+![Error loading image](https://raw.github.com/Jayen/StockAppPro/master/screenshots/data1.jpg)![Error loading image](https://raw.github.com/Jayen/StockAppPro/master/screenshots/data2.jpg)
