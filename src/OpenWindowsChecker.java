@@ -5,7 +5,8 @@ import javax.swing.JFrame;
 /**
  *The OpenWindowsChecker class monitors the 
  *open DataTableWindows and uses and arraylist to
- *store all the windows which are currently open. 
+ *store all the windows which are currently open.
+ * @author Jayen kumar Jaentilal 
  */
 
 public class OpenWindowsChecker 
@@ -65,6 +66,12 @@ public class OpenWindowsChecker
 	{
 		windows.remove(window);
 	}
+	/**
+	 * This method removes can also be used to remove the
+	 * window from the arraylist windows.
+	 * This method can find the window to remove via title of the window
+	 * @param windowName
+	 */
 	public static void removeWindow(String windowName)
 	{
 		try
@@ -77,11 +84,18 @@ public class OpenWindowsChecker
 				}
 			}
 		}
+		//nullPointerException is thrown if there are no windows
 		catch(NullPointerException e)
 		{
-			
+			//nothing to remove so do nothing
 		}
 	}
+	/**
+	 * Method to show the window.
+	 * This method brings the window above
+	 * all the other windows.
+	 * @param windowName
+	 */
 	public static void showWindow(String windowName)
 	{
 		try
@@ -96,11 +110,18 @@ public class OpenWindowsChecker
 				}
 			}
 		}
+		//nullPointerException is thrown if there are no windows
 		catch(NullPointerException e)
 		{
-			
+			//nothing to do as there are no windows to bring forward
 		}
 	}
+	/**
+	 * This method returns the window which
+	 * has the the title windowName.
+	 * @param windowName
+	 * @return JFrame-window
+	 */
 	public static JFrame getWindow(String windowName)
 	{
 		try
@@ -113,9 +134,10 @@ public class OpenWindowsChecker
 				}
 			}
 		}
+		//nullPointerException is thrown if there are no windows
 		catch(NullPointerException e)
 		{
-			
+			//nothing to do as there are no windows to get
 		}
 		return null;
 	}
